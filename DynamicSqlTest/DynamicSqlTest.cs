@@ -20,6 +20,8 @@ namespace DynamicSqlTest
             var query = builder.GetSqlQuery();
 
             Assert.NotNull(query);
+
+            Assert.Equal("SELECT Users.Id, Auth.Password FROM Users INNER JOIN Auth ON (Users.Id = Auth.Id)  WHERE  Users.Id = Auth.Id", query);
         }
     }
 }

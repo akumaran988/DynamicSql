@@ -18,7 +18,7 @@ namespace DynamicSqlQuery.Node
         {
             var expression = (Func<T, string>)_expression;
 
-            return $"{Environment.NewLine} {clause} {expression(NodeObjectTypes[0] as T)}";
+            return $" {clause} {expression(NodeObjectTypes[0] as T)}";
         }
     }
 
@@ -38,7 +38,7 @@ namespace DynamicSqlQuery.Node
         internal override string ConvertToString(string clause)
         {
             var expression = (Func<T, T1, string>)_expression;
-            return $"{Environment.NewLine} {clause} {expression(NodeObjectTypes[0] as T, NodeObjectTypes[1] as T1)}";
+            return $" {clause} {expression(NodeObjectTypes[0] as T, NodeObjectTypes[1] as T1)}";
         }
     }
 
@@ -60,7 +60,7 @@ namespace DynamicSqlQuery.Node
         internal override string ConvertToString(string clause)
         {
             var expression = (Func<object, object, object, string>)_expression;
-            return $"{Environment.NewLine} {clause} {expression(NodeObjectTypes[0] as T, NodeObjectTypes[1] as T1, NodeObjectTypes[2] as T2)}";
+            return $" {clause} {expression(NodeObjectTypes[0] as T, NodeObjectTypes[1] as T1, NodeObjectTypes[2] as T2)}";
         }
     }
 
@@ -84,7 +84,7 @@ namespace DynamicSqlQuery.Node
         internal override string ConvertToString(string clause)
         {
             var expression = (Func<object, object, object, object, string>)_expression;
-            return $"{Environment.NewLine} {clause} {expression(NodeObjectTypes[0] as T, NodeObjectTypes[1] as T1, NodeObjectTypes[2] as T2, NodeObjectTypes[3] as T3)}";
+            return $" {clause} {expression(NodeObjectTypes[0] as T, NodeObjectTypes[1] as T1, NodeObjectTypes[2] as T2, NodeObjectTypes[3] as T3)}";
         }
     }
 
@@ -110,7 +110,7 @@ namespace DynamicSqlQuery.Node
         internal override string ConvertToString(string clause)
         {
             var expression = (Func<object, object, object, object, object, string>)_expression;
-            return $"{Environment.NewLine} {clause} {expression(NodeObjectTypes[0] as T, NodeObjectTypes[1] as T1, NodeObjectTypes[2] as T2, NodeObjectTypes[2] as T3, NodeObjectTypes[2] as T4)}";
+            return $" {clause} {expression(NodeObjectTypes[0] as T, NodeObjectTypes[1] as T1, NodeObjectTypes[2] as T2, NodeObjectTypes[2] as T3, NodeObjectTypes[2] as T4)}";
         }
     }
 }

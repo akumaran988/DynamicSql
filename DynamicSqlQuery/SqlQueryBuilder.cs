@@ -116,6 +116,7 @@ namespace DynamicSqlQuery
                 query += item.ConvertToString("INNER JOIN");
             }
 
+            joinNodes.Clear();
             // Get the Join clause construct
             NTree<SqlNode>.TraverseFor((NTree<SqlNode>)_root, (node) => node.NodeType == "LEFT JOIN", joinNodes);
 
@@ -124,6 +125,7 @@ namespace DynamicSqlQuery
                 query += item.ConvertToString("LEFT JOIN");
             }
 
+            joinNodes.Clear();
             // Get the Join clause construct
             NTree<SqlNode>.TraverseFor((NTree<SqlNode>)_root, (node) => node.NodeType == "RIGHT JOIN", joinNodes);
 

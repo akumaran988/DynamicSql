@@ -13,7 +13,7 @@ namespace DynamicSqlQuery.Node
 
         internal override string ConvertToString(string clause)
         {
-            return $"{Environment.NewLine} {this.NodeType} {this.NodeObjectTypes[0].GetFullObjectName()}";
+            return $" {this.NodeType} {this.NodeObjectTypes[0].GetFullObjectName()}";
         }
     }
 }

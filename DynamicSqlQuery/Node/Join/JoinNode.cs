@@ -21,7 +21,7 @@ namespace DynamicSqlQuery.Node.Join
         internal override string ConvertToString(string clause)
         {
             var expression = (Func<T, T1, string>)_expression;
-            return $"{Environment.NewLine} {clause} {(NodeObjectTypes[1] as T1).GetFullObjectName()} ON ({expression(NodeObjectTypes[0] as T, NodeObjectTypes[1] as T1)})";
+            return $" {clause} {(NodeObjectTypes[1] as T1).GetFullObjectName()} ON ({expression(NodeObjectTypes[0] as T, NodeObjectTypes[1] as T1)})";
         }
     }
 }
