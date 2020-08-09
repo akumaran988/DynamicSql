@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "Console\Console.csproj", "{4E33E649-07CF-444A-9038-B10BA48E93EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBench", "Console\TestBench.csproj", "{4E33E649-07CF-444A-9038-B10BA48E93EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicSqlQuery", "DynamicSqlQuery\DynamicSqlQuery.csproj", "{5A1DF9FD-7E0E-4C56-9CBE-7B80EDA1FA27}"
 EndProject
