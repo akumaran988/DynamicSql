@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBench", "Console\TestBe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicSqlQuery", "DynamicSqlQuery\DynamicSqlQuery.csproj", "{5A1DF9FD-7E0E-4C56-9CBE-7B80EDA1FA27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicSqlTest", "DynamicSqlTest\DynamicSqlTest.csproj", "{077989FD-DB53-4BCE-B696-84CD71DC7685}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,5 +21,9 @@ Global
 		{5A1DF9FD-7E0E-4C56-9CBE-7B80EDA1FA27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A1DF9FD-7E0E-4C56-9CBE-7B80EDA1FA27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A1DF9FD-7E0E-4C56-9CBE-7B80EDA1FA27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{077989FD-DB53-4BCE-B696-84CD71DC7685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{077989FD-DB53-4BCE-B696-84CD71DC7685}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{077989FD-DB53-4BCE-B696-84CD71DC7685}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{077989FD-DB53-4BCE-B696-84CD71DC7685}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

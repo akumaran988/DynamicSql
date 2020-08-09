@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Folder Include="Node\" />
-    <Folder Include="Data\" />
     <Folder Include="Node\Join\" />
   </ItemGroup>
 </Project>

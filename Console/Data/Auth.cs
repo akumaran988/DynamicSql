@@ -1,27 +1,32 @@
 ﻿using System;
 using DynamicSqlQuery.Node;
 
-namespace DynamicSqlQuery.Data
+namespace TestBench.Data
 {
-    public class Users : ISqlObject
+    public class Auth : ISqlObject
     {
         public string Alias { get; set; }
 
-        public Users()
+        public Auth()
         {
             Alias = null;
         }
 
-        public Users(string alias)
+        public Auth(string alias)
         {
             Alias = alias;
         }
 
-        public const string TableName = "Users";
-        public string Id => GetObjectName() + ".Id";
-        public string Name => GetObjectName() + ".Name";
-        public string Age => GetObjectName() + ".Age";
-        public string Place => GetObjectName() + ".Place";
+        public const string TableName = "Auth";
+        public string Id => GetObjectName() + "." + IdRaw;
+        public string Password => GetObjectName() + "." + PasswordRaw;
+
+        #region Raw Column Names
+
+        public string IdRaw = "Id";
+        public string PasswordRaw = "Password";
+
+        #endregion Raw Column Names
 
         public string GetFullObjectName()
         {
@@ -39,7 +44,6 @@ namespace DynamicSqlQuery.Data
             {
                 return $"{Alias}";
             }
-
             return $"{TableName}";
         }
     }
